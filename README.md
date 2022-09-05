@@ -1,8 +1,9 @@
 # GEC-swedish
-Grammatical Error Correction for Swedish, done as a Master's Thesis project in Language Technology. Written solely in Python, the code constitutes two approaches to Grammatical Error Correction, found in their respective subfolders:
+Grammatical Error Correction for Swedish, done as a Master's Thesis project in Language Technology. Written in Python, the code constitutes two approaches to Grammatical Error Correction, found in their respective subfolders:
 1. Machine Translation
 2. Language Model scoring
 
+This project utilizes several resources that needs to be downloaded and/or installed, see below. 
 ### Requirements
 - The SweLL gold corpus (Request access at: https://spraakbanken.gu.se/en/projects/swell)
 - Aspell for Python, available from https://github.com/WojciechMula/aspell-python
