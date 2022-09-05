@@ -7,6 +7,7 @@ Grammatical Error Correction for Swedish, done as a Master's Thesis project in L
 - The SweLL gold corpus (Request access at: https://spraakbanken.gu.se/en/projects/swell)
 - Aspell for Python, available from https://github.com/WojciechMula/aspell-python
 - The Swedish dictionary for Aspell (https://ftp.gnu.org/gnu/aspell/dict/sv/)
+- Saldo morphology lexicon (https://spraakbanken.gu.se/resurser/saldom)
 - Spacy_udpipe (https://github.com/TakeLab/spacy-udpipe)
 - GLEU scripts for evaluation from https://github.com/cnap/gec-ranking
 
