@@ -1,7 +1,7 @@
 #!/bin/bash -l
 
-#SBATCH -A uppmax2020-2-2 # project no.
-#SBATCH -M snowy # cluster name
+#SBATCH -A PROJECT_NAME # project no.
+#SBATCH -M CLUSER # cluster name
 #SBATCH -t 3-00:00:00 # time
 #SBATCH -J train # job name
 #SBATCH -p node
@@ -13,16 +13,17 @@
 # load modules and set the environment
 module load python/3.8.7
 module load gcc
-source /home/martiny/GEC387/bin/activate 
+source ENV_NAME # activate environment
 
-#cat /proj/uppmax2021-2-31/martina/data/train.clean.bpe.err /proj/uppmax2021-2-31/martina/data/train.clean.bpe.cor | ./marian/build/marian-vocab > /proj/uppmax2021-2-31/martina/data/vocab.yml
+#Create vocabulary from train and test data
+cat PATH_TO_ERRONEOUS_TRAIN_DATA PATH_TO_CORRECT_TRAIN_DATA | ./marian/build/marian-vocab > PATH_TO_VOCAB_FILE (.yaml format)
 
 ./marian/build/marian \
     --devices 0 --sync-sgd \
-    --model /proj/uppmax2021-2-31/martina/model/model.npz --type transformer \
-    --train-sets /proj/uppmax2021-2-31/martina/data/train.clean.bpe.err /proj/uppmax2021-2-31/martina/data/train.clean.bpe.cor \
-    --vocabs /proj/uppmax2021-2-31/martina/data/vocab.yml /proj/uppmax2021-2-31/martina/data/vocab.yml \
-    --guided-alignment /proj/uppmax2021-2-31/martina/data/corpus.align \
+    --model PATH_TO_MODEL/model.npz --type transformer \
+    --train-sets train.clean.bpe.err train.clean.bpe.cor \
+    --vocabs PATH_TO_VOCAB/vocab.yml PATH_TO_VOCAB/vocab.yml \
+    --guided-alignment /PATH_TO_ALIGMENT_FILE/corpus.align \
     --guided-alignment-cost ce \
     --guided-alignment-weight 1 \
     --task transformer-base \
@@ -43,11 +44,11 @@ source /home/martiny/GEC387/bin/activate
     --beam-size 12 --normalize 1 \
     --valid-freq 5000 --save-freq 5000 --disp-freq 500 \
     --valid-metrics translation \
-    --valid-sets /proj/uppmax2021-2-31/martina/data/dev.bpe.err /proj/uppmax2021-2-31/martina/data/dev.bpe.cor \
-    --valid-script-path 'bash /proj/uppmax2021-2-31/martina/scripts/validate.sh' \
-    --valid-translation-output /proj/uppmax2021-2-31/martina/data/validation-output-after-{U}-updates-{T}-tokens.txt --quiet-translation \
+    --valid-sets dev.bpe.err data/dev.bpe.cor \
+    --valid-script-path 'validate.sh' \
+    --valid-translation-output PATH/validation-output-after-{U}-updates-{T}-tokens.txt --quiet-translation \
     --valid-mini-batch 64 \
-    --log /proj/uppmax2021-2-31/martina/model/train.log --valid-log /proj/uppmax2021-2-31/martina/model/valid.log \
+    --log PATH/train.log --valid-log PATH/valid.log \
     --overwrite --keep-best \
 
 deactivate
