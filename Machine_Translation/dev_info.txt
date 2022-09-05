@@ -1,0 +1,28 @@
+Dev level A: 126 texts, 1334 sentences
+Dev level B: 9 texts, 208 sentences
+Dev level C: 32 texts, 760 sentences
+
+Test level A: 162 texts, 1719 sentences
+Test level B: 36 texts, 782 sentences
+Test level C: 136 texts, 3334 sentences
+
+Total level A: 288 texts, 3053 sentences
+Total level B: 45 texts, 990 sentences
+Total level C: 168 texts, 4094 sentences
+
+Total Dev sentences: 2302
+
+The following essays were used as dev data:
+
+A: 'A3AT2', 'C142CT24', 'C84CT14', 'C55CT11', 'G54GT3', 'C12CT2', 'G72GT4', 'C9CT2', 'C125CT20', 'C9CT1', 'C140CT23', 'G39GT2', 'C21CT1', 'C147CT23', 'G4GT2', 'C126CT23', 'G53GT3', 'G30GT2', 'A27AT3', 'C62CT11', 'C54CT10', 'C105CT16', 'C81CT13', 'G49GT3', 'G34GT2', 'G44GT3', 'C79CT14', 'C100CT19', 'C56CT12', 'C2CT1', 'A4AT2', 'G32GT2', 'G69GT4', 'G5GT2', 'G43GT3', 'C86CT15', 'C111CT16', 'C127CT20', 'G52GT3', 'G12GT2', 'G29GT2', 'G23GT3', 'G8GT1', 'G21GT3', 'G16GT1', 'G71GT4', 'A7AT4', 'C16CT1', 'G5GT1', 'C151CT23', 'A9AT4', 'G40GT1', 'C132CT20', 'C150CT23', 'G32GT1', 'C54CT11', 'G68GT4', 'C51CT12', 'C97CT16', 'C105CT19', 'C71CT14', 'G15GT1', 'G33GT1', 'C17CT2', 'C106CT16', 'G47GT3', 'C13CT2', 'G38GT2', 'C97CT17', 'C153CT23', 'C157CT24', 'C66CT12', 'C77CT14', 'C149CT23', 'C126CT24', 'C157CT23', 'G50GT3', 'G39GT1', 'C103CT16', 'C11CT2', 'C92CT18', 'C122CT20', 'C66CT11', 'C99CT16', 'G26GT3', 'C15CT1', 'C17CT1', 'C113CT18', 'G51GT3', 'G58GT4', 'C85CT17', 'A5AT2', 'C55CT10', 'C14CT2', 'A22AT3', 'C106CT17', 'C16CT2', 'A18AT4', 'C136CT20', 'C15CT2', 'C105CT18', 'G8GT2', 'C91CT19', 'C74CT15', 'C1CT2', 'C102CT17', 'C81CT15', 'C19CT1', 'C60CT17', 'A20AT4', 'G64GT4', 'C5CT1', 'C102CT18', 'C60CT14', 'C50CT12', 'G56GT3', 'G19GT3', 'G25GT3', 'C150CT24', 'G36GT2', 'A11AT4', 'G46GT3', 'C123CT20', 'C91CT17', 'G11GT1', 'C79CT15'
+
+B: 'K48KT4', 'K13KT1', 'K13KT2', 'K48KT1', 'K21KT3', 'K43KT1', 'K11KT1', 'K44KT1', 'K5KT4'
+
+C: 'E14ET8', 'M42MT1', 'M32MT1', 'M4MT1', 'H10HT1', 'E10ET8', 'F41FT3', 'B13BT5', 'F15FT2', 'F34FT3', 'B3BT1', 'M43MT1', 'B1BT1', 'M20MT1', 'E4ET6', 'H6HT1', 'F6FT1', 'H29HT1', 'H2HT1', 'M34MT1', 'M35MT1', 'E13ET6', 'E1ET8', 'E9ET1', 'E27ET12', 'B10BT1', 'H12HT1', 'F25FT3', 'M16MT1', 'B20BT3', 'B20BT5', 'B28BT3'
+
+Test source: 335 texts, 5835 sentences
+Test target: 335 texts, 5835 sentences
+Dev source: 167 texts, 2302 sentences
+Dev target: 167 texts, 2302 sentences
+
+
