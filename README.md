@@ -16,7 +16,7 @@ This project utilizes several resources that needs to be downloaded and/or insta
 Specific for MT approach:
 - Numpy (Python)
 - NLTK (Python)
-- marian-nmt (https://marian-nmt.github.io/)
+- marian-nmt v 1.11.0 (https://marian-nmt.github.io/)
 - subword-nmt (https://github.com/rsennrich/subword-nmt)
 - fast_align (https://github.com/clab/fast_align) or other alignment tool
 
