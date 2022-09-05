@@ -41,4 +41,7 @@ Once the erroneous sentences are generated, these are paired with their original
 - Preprocess the train, test and dev sets by applying byte-pair encoding through subword-nmt (https://github.com/rsennrich/subword-nmt)
 - Create an anlignment file to use in training, from fast_align (https://github.com/clab/fast_align) or other alignment tool
 - Adapt the training script `train_model.sh` and validation script `validate.sh` to fit your setup, by specifying the correct file paths and other settings. 
-- Once the model is trained, it can be run on the test set, using the script `evaluate_model.sh`. 
+- Once the model is trained, it can be run on the test set, using the script `evaluate_model.sh`. The output will be a GLEU score between 0 and 1.
+
+## Language Model scoring approach
+
