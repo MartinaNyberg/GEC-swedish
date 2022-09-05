@@ -6,7 +6,7 @@ Grammatical Error Correction for Swedish, done as a Master's Thesis project in L
 This project utilizes several resources that needs to be downloaded and/or installed, see below. 
 ### Requirements
 - The SweLL gold corpus (Request access at: https://spraakbanken.gu.se/en/projects/swell)
-- the news portion of the Swedish Culturomics Gigaword Corpus corpus between the years 2010-2015 (https://spraakbanken.gu.se/resurser/gigaword)
+- The news portion of the Swedish Culturomics Gigaword Corpus corpus between the years 2010-2015 (https://spraakbanken.gu.se/resurser/gigaword)
 - Aspell for Python, available from https://github.com/WojciechMula/aspell-python
 - The Swedish dictionary for Aspell (https://ftp.gnu.org/gnu/aspell/dict/sv/)
 - Saldo morphology lexicon (https://spraakbanken.gu.se/resurser/saldom)
