@@ -30,4 +30,4 @@ In creating a parallel dataset of incorrect-correct sentences, errors are induce
 - A file containing word inflections created from the vocabulary by using the file `create_inflection_list.py`. See this file in the `Machine_Translation` folder for instructions. In addition to the vocabulary file, the Saldo morphology lexicon is needed, which can be downloaded here: https://spraakbanken.gu.se/resurser/saldom.
 - A file containing word replacements, created through the `create_aspell_replacements.py` file. Run by passing the vocabulary file to the script, and redirect the output to a text file. 
 
-Once the erroneous sentences are generated, these are paired with their original, correct versions. 
+Once the erroneous sentences are generated, these are paired with their original, correct versions to form a parallel dataset that can be used for training a transformer model. 
