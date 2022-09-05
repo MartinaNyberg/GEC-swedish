@@ -36,7 +36,7 @@ Preparing the test and dev data from the SweLL Gold Corpus:
 - Create a development set from part of the SweLL data.  Imformation on which essays from the data that were used in the dev set is found in the file `dev_info.txt`. 
 - Create a test set from the remaining part of the SweLL data that was not used for development. 
 
-Once the erroneous sentences are generated, these are paired with their original, correct versions to form a parallel dataset that can be used for training a transformer model. 
+Once the erroneous sentences are generated, these are paired with their original, correct versions to form a parallel dataset that can be used for training a transformer model: 
 - Install Marian-nmt (https://marian-nmt.github.io/)
 - Preprocess the train, test and dev sets by applying byte-pair encoding through subword-nmt (https://github.com/rsennrich/subword-nmt)
 - Create an anlignment file to use in training, from fast_align (https://github.com/clab/fast_align) or other alignment tool
