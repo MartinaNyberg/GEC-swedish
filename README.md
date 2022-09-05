@@ -53,3 +53,7 @@ The correction is done through the file `lm_scoring.py`. This code is a modified
 - Please see the code file for additional information about the input needed. Apart from ud_pipe, the code requires mlm-scoring (https://github.com/awslabs/mlm-scoring) to work. 
 - Run the code on the test portion of the Swell data.
 - Evaluation can be done with the GLEU scripts from https://github.com/cnap/gec-ranking
+
+## References
+Nyberg, Martina (2022). "Grammatical Error Correction for Learners of Swedish as a Second Language" 
+https://www.diva-portal.org/smash/record.jsf?pid=diva2:1666233
