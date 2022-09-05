@@ -12,8 +12,8 @@ Grammatical Error Correction for Swedish, done as a Master's Thesis project in L
 - GLEU scripts for evaluation from https://github.com/cnap/gec-ranking
 
 Specific for MT approach:
-- Numpy
-- NLTK
+- Numpy (Python)
+- NLTK (Python)
 - marian-nmt (https://marian-nmt.github.io/)
 - subword-nmt (https://github.com/rsennrich/subword-nmt)
 - fast_align (https://github.com/clab/fast_align) or other alignment tool
@@ -31,3 +31,8 @@ In creating a parallel dataset of incorrect-correct sentences, errors are induce
 - A file containing word replacements, created through the `create_aspell_replacements.py` file. Run by passing the vocabulary file to the script, and redirect the output to a text file. 
 
 Once the erroneous sentences are generated, these are paired with their original, correct versions to form a parallel dataset that can be used for training a transformer model. 
+- Install Marian-nmt (https://marian-nmt.github.io/)
+- Preprocess the train and test sets by applying byte-pair encoding through subword-nmt (https://github.com/rsennrich/subword-nmt)
+- Prepare a development set and apply byte-pair encoding as above. This set created by taking part of the SweLL test data. Imformation on which essays from the data that were used in the dev set is found in the file `dev_info.txt`. 
+- Create an anlignment file to use in training, from fast_align (https://github.com/clab/fast_align) or other alignment tool
+- Adapt the training script `train_model.sh` and validation script `validate.sh` to fit your setup, by specifying the correct file paths and other settings. 
