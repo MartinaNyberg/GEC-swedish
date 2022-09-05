@@ -50,6 +50,6 @@ The resources used for generating corrections in an erroneous sentence constitut
 
 The correction is done through the file `lm_scoring.py`. This code is a modified version of a software initially created by Christopher Bryant (https://github.com/chrisjbryant/lmgec-lite). 
 
--Please see the code file for additional information about the input needed. Apart from ud_pipe, the code requires mlm-scoring (https://github.com/awslabs/mlm-scoring) to work. 
+- Please see the code file for additional information about the input needed. Apart from ud_pipe, the code requires mlm-scoring (https://github.com/awslabs/mlm-scoring) to work. 
 - Run the code on the test portion of the Swell data.
 - Evaluation can be done with the GLEU scripts from https://github.com/cnap/gec-ranking
