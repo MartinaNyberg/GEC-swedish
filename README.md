@@ -1,5 +1,5 @@
 # GEC-swedish
-Grammatical Error Correction for Swedish, done as a Master's Thesis project in Language Technology. Written in Python 3, the code constitutes two approaches to Grammatical Error Correction, found in their respective subfolders:
+Grammatical Error Correction for Swedish, done as a Master's Thesis project in Language Technology. Written in Python 3, the code constitutes two approaches to Grammatical Error Correction, found in their respective folders:
 1. Machine Translation
 2. Language Model scoring
 
