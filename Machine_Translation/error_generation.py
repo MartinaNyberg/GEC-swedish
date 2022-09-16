@@ -9,7 +9,6 @@ nltk.download("punkt")
 spacy_udpipe.download("sv") 
 nlp = spacy_udpipe.load("sv")
 
-
 def load_confusions(filepath):
     conf = dict()
     with open(filepath, 'r', encoding="utf8") as cf:
@@ -19,6 +18,7 @@ def load_confusions(filepath):
                 conf[fields[0]] = fields[1:]
     return conf
 
+
 def load_inflections(filepath):
     inflections = dict()
     with open(filepath, 'r', encoding="utf8") as inf:
@@ -26,6 +26,7 @@ def load_inflections(filepath):
             fields = line.rstrip("\n").split("\t")
             inflections[fields[0]] = fields[1:]
     return inflections
+
 
 def read_vocab(vocab_path):
     vocab = []
@@ -39,10 +40,12 @@ def read_vocab(vocab_path):
     vocab = set(vocab)
     return vocab
 
+
 def preprocess_sent(sent):
     sent = sent.strip()
     sentence = nltk.word_tokenize(sent, language="swedish")
     return sentence
+
 
 class Sentence:
     def __init__(self, sentence):
@@ -107,7 +110,7 @@ class Sentence:
     
     def induce_errors(self):
         """Induce errors into a sentence."""
-        #Sample a value from a normal destination with mean corresponding to WER in dev data.
+        #Sample a value from a normal distribution with mean corresponding to WER in dev data.
         sample = np.random.normal(loc=0.2,scale=0.2,size=1)
         sent_length = len([w for w in self.sentence if w.isalpha()])
         n_words_to_change = round(sample[0] * sent_length) # Number of words to induce errors into.
@@ -251,7 +254,8 @@ class Sentence:
             self.sentence.remove(",")
         elif "." in self.sentence:
             self.sentence.remove(".")
-        
+
+            
 def parse_user_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--data', help="Input file containing sentences, one per line.", required=True)
