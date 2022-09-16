@@ -3,7 +3,7 @@ Grammatical Error Correction for Swedish, done as a Master's Thesis project in L
 1. Machine Translation
 2. Language Model scoring
 
-This project utilizes several resources that needs to be downloaded and/or installed, see below. 
+This project utilizes several resources that need to be downloaded and/or installed, see below. 
 ### Requirements
 - The SweLL gold corpus (Request access at: https://spraakbanken.gu.se/en/projects/swell)
 - The news portion of the Swedish Culturomics Gigaword Corpus corpus between the years 2010-2015 (https://spraakbanken.gu.se/resurser/gigaword)
