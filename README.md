@@ -34,7 +34,7 @@ In creating a parallel dataset of incorrect-correct sentences, errors are induce
 
 Preparing the test and dev data from the SweLL Gold Corpus:
 - Extract the source and target sentences for all essays.
-- Use a tool for sentence alignment to align the source and target sentences. 
+- Ideally, use a tool for sentence alignment to align the source and target sentences. 
 - Create a development set from part of the SweLL data.  Imformation on which essays from the data that were used in the dev set is found in the file `dev_info.txt`. 
 - Create a test set from the remaining part of the SweLL data that was not used for development. 
 
